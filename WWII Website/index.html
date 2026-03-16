@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echoes of WWII — Stories That Shaped the World</title>
+  <meta name="description" content="An immersive journey through World War II. Explore untold stories, pivotal battles, and the human experiences that shaped the modern world.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-accent">Echoes</span> of WWII
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="stories.html">Stories</a>
+        <a href="watch.html">Watch</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">1939 &mdash; 1945</p>
+      <h1>Stories That <span class="highlight">Shaped</span> the World</h1>
+      <p class="hero-description">
+        An immersive journey through the defining conflict of the 20th century.
+        Explore the battles, the people, and the moments that changed everything.
+      </p>
+      <div class="hero-cta">
+        <a href="timeline.html" class="btn btn-primary">
+          Explore the Timeline
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="stories.html" class="btn btn-outline">Read Stories</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stat-item reveal">
+      <span class="stat-number" data-count="6">0</span>
+      <span class="stat-label">Years of Conflict</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <span class="stat-number" data-count="30">0</span>
+      <span class="stat-label">Countries Involved</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <span class="stat-number" data-count="70">0</span>
+      <span class="stat-label">Million Lives Lost</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <span class="stat-number" data-count="50">0</span>
+      <span class="stat-label">Stories & Counting</span>
+    </div>
+  </div>
+
+  <!-- Featured Stories -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="featured-header reveal">
+        <div>
+          <p class="section-label">Featured Stories</p>
+          <h2>Pivotal Moments</h2>
+          <p>Deep dives into the events that turned the tide of war.</p>
+        </div>
+        <a href="stories.html" class="btn btn-outline">View All Stories</a>
+      </div>
+
+      <div class="stories-grid">
+        <!-- Card 1 -->
+        <a href="story-dday.html" class="card reveal">
+          <div class="card-image-wrapper">
+            <img class="card-image" src="https://images.unsplash.com/photo-1565711561500-49678a10a63f?w=600&q=80" alt="D-Day beaches in Normandy">
+          </div>
+          <div class="card-body">
+            <span class="card-date">June 6, 1944</span>
+            <h3>D-Day: The Invasion of Normandy</h3>
+            <p>The largest amphibious military operation in history. Over 156,000 Allied troops stormed the beaches of Normandy, marking the beginning of the end for Nazi Germany.</p>
+            <span class="card-link">
+              Read the full story
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="story-stalingrad.html" class="card reveal reveal-delay-1">
+          <div class="card-image-wrapper">
+            <img class="card-image" src="assets/a0dafd4e-2c92-43cc-b2d6-c9310430985b.jpg" alt="German officers planning over a war map during the Battle of Stalingrad">
+          </div>
+          <div class="card-body">
+            <span class="card-date">Aug 1942 — Feb 1943</span>
+            <h3>The Battle of Stalingrad</h3>
+            <p>The bloodiest battle in human history. The Soviet defense of Stalingrad became a turning point on the Eastern Front, shattering the myth of German invincibility.</p>
+            <span class="card-link">
+              Read the full story
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="story-pearl-harbor.html" class="card reveal reveal-delay-2">
+          <div class="card-image-wrapper">
+            <img class="card-image" src="assets/pearl-harbor.png" alt="Pearl Harbor attack">
+          </div>
+          <div class="card-body">
+            <span class="card-date">December 7, 1941</span>
+            <h3>Pearl Harbor: A Day of Infamy</h3>
+            <p>The surprise Japanese attack on Pearl Harbor propelled the United States into World War II, forever altering the course of the conflict and global politics.</p>
+            <span class="card-link">
+              Read the full story
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" style="text-align: center; padding: 6rem 0; border-top: 1px solid var(--border);">
+    <div class="container reveal">
+      <p class="section-label" style="justify-content: center;">The Full Picture</p>
+      <h2 style="margin-bottom: 1rem;">Explore the Interactive Timeline</h2>
+      <p style="margin: 0 auto 2rem; max-width: 500px;">
+        Walk through every major event of World War II on our animated, interactive timeline — from the invasion of Poland to V-J Day.
+      </p>
+      <a href="timeline.html" class="btn btn-primary">
+        Enter the Timeline
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h4><span style="color: var(--accent-light)">Echoes</span> of WWII</h4>
+          <p>Bringing history to life through compelling storytelling, clean visuals, and an interactive experience designed for learners and history enthusiasts alike.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <a href="timeline.html">Timeline</a>
+          <a href="stories.html">Stories</a>
+          <a href="watch.html">Watch</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-col">
+          <h5>Topics</h5>
+          <a href="stories.html">Battles</a>
+          <a href="stories.html">People</a>
+          <a href="stories.html">Home Front</a>
+          <a href="stories.html">Technology</a>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <a href="#">YouTube</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter / X</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Echoes of WWII. All rights reserved.</span>
+        <div class="footer-socials">
+          <a href="#" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
