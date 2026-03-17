@@ -32,22 +32,28 @@
   </nav>
 
   <!-- Story Hero -->
-  <section class="story-hero" style="background-image: url('https://images.unsplash.com/photo-1576671081837-49000212a370?w=1400&q=80')">
+  <div class="story-hero">
+    <div class="story-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1576671081837-49000212a370?w=1400&q=80');"></div>
     <div class="story-hero-overlay"></div>
-    <div class="container story-hero-content">
-      <div class="story-meta">
-        <span>1928 — 1945</span>
-        <span>Technology</span>
-        <span>11 min read</span>
+    <div class="story-hero-content">
+      <div class="container">
+        <div class="story-meta">
+          <span class="story-meta-item">1928 — 1945</span>
+          <span class="story-meta-divider"></span>
+          <span class="story-meta-item">Technology</span>
+          <span class="story-meta-divider"></span>
+          <span class="story-meta-item">11 min read</span>
+        </div>
+        <h1>Penicillin: The Drug That Won the War</h1>
+        <p class="story-hero-description">How a chance discovery in a London laboratory became the miracle drug that saved hundreds of thousands of soldiers' lives and changed medicine forever.</p>
       </div>
-      <h1>Penicillin: The Drug That Won the War</h1>
-      <p class="story-description">How a chance discovery in a London laboratory became the miracle drug that saved hundreds of thousands of soldiers' lives and changed medicine forever.</p>
     </div>
-  </section>
+  </div>
 
   <!-- Story Content -->
-  <article class="story-content">
-    <div class="container container-narrow">
+  <section class="story-content">
+    <div class="container">
+      <div class="story-body">
 
       <h2>The Tent That Smelled Like Death</h2>
 
@@ -71,7 +77,7 @@
 
       <blockquote>
         <p>"That's funny."</p>
-        <footer>— Alexander Fleming, upon discovering penicillin, September 1928</footer>
+        <p>— Alexander Fleming, upon discovering penicillin, September 1928</p>
       </blockquote>
 
       <p>Fleming identified the mold as <em>Penicillium notatum</em> and named the antibacterial substance it produced "penicillin." Over the following weeks, he conducted experiments showing that the mold juice killed a wide range of dangerous bacteria — Staphylococcus, Streptococcus, the organisms responsible for gangrene, diphtheria, and pneumonia. It was, he realized, extraordinarily powerful. And crucially, it appeared to be non-toxic to human tissue, unlike the harsh antiseptics then in use.</p>
@@ -102,7 +108,7 @@
 
       <blockquote>
         <p>"It looks like a miracle."</p>
-        <footer>— Howard Florey, after the first successful animal trial, May 1940</footer>
+        <p>— Howard Florey, after the first successful animal trial, May 1940</p>
       </blockquote>
 
       <h2>The Policeman Who Almost Lived</h2>
@@ -115,20 +121,46 @@
 
       <p>The tragedy was not that penicillin had failed. It was that there had not been enough of it. Alexander's case proved beyond any doubt that penicillin worked in humans. What was needed now was a way to produce it in quantities that could actually save lives. And that problem, as Florey quickly realized, could not be solved in wartime Britain.</p>
 
-      <aside class="story-quick-facts">
-        <h3>Quick Facts</h3>
-        <ul>
-          <li><strong>Discovery:</strong> September 3, 1928, by Alexander Fleming at St. Mary's Hospital, London</li>
-          <li><strong>Key developers:</strong> Howard Florey and Ernst Boris Chain at Oxford University</li>
-          <li><strong>First human trial:</strong> February 12, 1941 — Constable Albert Alexander</li>
-          <li><strong>Mass production began:</strong> 1943, in the United States</li>
-          <li><strong>D-Day supply:</strong> 2.3 million doses prepared for the Normandy invasion</li>
-          <li><strong>WWI wound infection death rate:</strong> ~18%</li>
-          <li><strong>WWII wound infection death rate:</strong> Less than 1%</li>
-          <li><strong>Nobel Prize:</strong> 1945 — shared by Fleming, Florey, and Chain</li>
-          <li><strong>Cost drop:</strong> From priceless in 1940 to under $1 per dose by 1945</li>
-        </ul>
-      </aside>
+      <!-- Quick Facts -->
+      <div class="story-quick-facts">
+        <h4>Quick Facts</h4>
+        <div class="fact-item">
+          <span class="fact-label">Discovery</span>
+          <span class="fact-value">September 3, 1928, by Alexander Fleming at St. Mary's Hospital, London</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Key Developers</span>
+          <span class="fact-value">Howard Florey and Ernst Boris Chain at Oxford University</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">First Human Trial</span>
+          <span class="fact-value">February 12, 1941 — Constable Albert Alexander</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Mass Production Began</span>
+          <span class="fact-value">1943, in the United States</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">D-Day Supply</span>
+          <span class="fact-value">2.3 million doses prepared for the Normandy invasion</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">WWI Wound Infection Death Rate</span>
+          <span class="fact-value">~18%</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">WWII Wound Infection Death Rate</span>
+          <span class="fact-value">Less than 1%</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Nobel Prize</span>
+          <span class="fact-value">1945 — shared by Fleming, Florey, and Chain</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Cost Drop</span>
+          <span class="fact-value">From priceless in 1940 to under $1 per dose by 1945</span>
+        </div>
+      </div>
 
       <h2>Crossing the Atlantic</h2>
 
@@ -154,7 +186,7 @@
 
       <blockquote>
         <p>"The gruesome war casualties are gruesome no more when a gruesome fungus can make them whole."</p>
-        <footer>— Popular wartime saying about penicillin</footer>
+        <p>— Popular wartime saying about penicillin</p>
       </blockquote>
 
       <h2>The Race to D-Day</h2>
@@ -179,7 +211,7 @@
 
       <blockquote>
         <p>"The grueling campaigns in North Africa, Sicily, Italy, and Northwestern Europe would not have been possible without adequate supplies of penicillin."</p>
-        <footer>— General Dwight D. Eisenhower</footer>
+        <p>— General Dwight D. Eisenhower</p>
       </blockquote>
 
       <h2>Three Men and a Medal</h2>
@@ -192,7 +224,7 @@
 
       <blockquote>
         <p>"The time may come when penicillin can be bought by anyone in the shops. Then there is the danger that the ignorant man may easily underdose himself and by exposing his microbes to non-lethal quantities of the drug make them resistant."</p>
-        <footer>— Alexander Fleming, Nobel Lecture, December 11, 1945</footer>
+        <p>— Alexander Fleming, Nobel Lecture, December 11, 1945</p>
       </blockquote>
 
       <p>It was a warning that the world would spend the next eight decades failing to heed.</p>
@@ -217,15 +249,22 @@
         <p>"A mold saved my life. Can you believe that? A mold."</p>
       </blockquote>
 
+      </div>
     </div>
-  </article>
+  </section>
 
   <!-- Related Stories -->
   <section class="related-stories">
     <div class="container">
-      <h2>Related Stories</h2>
+      <div class="featured-header reveal">
+        <div>
+          <p class="section-label">Continue Reading</p>
+          <h2>Related Stories</h2>
+        </div>
+        <a href="stories.html" class="btn btn-outline">All Stories</a>
+      </div>
       <div class="stories-grid">
-        <a href="story-radar.html" class="card">
+        <a href="story-radar.html" class="card reveal">
           <div class="card-image-wrapper">
             <img class="card-image" src="https://images.unsplash.com/photo-1534996858221-380b92700493?w=600&q=80" alt="Radar technology">
           </div>
@@ -236,7 +275,7 @@
             <span class="card-link">Read the full story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </a>
-        <a href="story-enigma.html" class="card">
+        <a href="story-enigma.html" class="card reveal reveal-delay-1">
           <div class="card-image-wrapper">
             <img class="card-image" src="https://images.unsplash.com/photo-1574715826360-7c02d0153097?w=600&q=80" alt="Bletchley Park">
           </div>

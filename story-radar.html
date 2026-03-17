@@ -13,6 +13,7 @@
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="container">
       <a href="index.html" class="nav-logo">
@@ -31,21 +32,29 @@
     </div>
   </nav>
 
-  <header class="story-hero" style="background-image: url('https://images.unsplash.com/photo-1534996858221-380b92700493?w=1400&q=80');">
+  <!-- Story Hero -->
+  <div class="story-hero">
+    <div class="story-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1534996858221-380b92700493?w=1400&q=80');"></div>
     <div class="story-hero-overlay"></div>
-    <div class="container story-hero-content">
-      <div class="story-meta">
-        <span>1935 — 1945</span>
-        <span>Technology</span>
-        <span>12 min read</span>
+    <div class="story-hero-content">
+      <div class="container">
+        <div class="story-meta">
+          <span class="story-meta-item">1935 — 1945</span>
+          <span class="story-meta-divider"></span>
+          <span class="story-meta-item">Technology</span>
+          <span class="story-meta-divider"></span>
+          <span class="story-meta-item">12 min read</span>
+        </div>
+        <h1>Radar: The Invisible Shield</h1>
+        <p class="story-hero-description">How an invisible web of radio waves gave Britain an edge in the Battle of Britain and revolutionized warfare forever.</p>
       </div>
-      <h1>Radar: The Invisible Shield</h1>
-      <p class="story-description">How an invisible web of radio waves gave Britain an edge in the Battle of Britain and revolutionized warfare forever.</p>
     </div>
-  </header>
+  </div>
 
-  <article class="story-content">
-    <div class="container container-narrow">
+  <!-- Story Content -->
+  <section class="story-content">
+    <div class="container">
+      <div class="story-body">
 
       <p>On the morning of September 15, 1940, a young Women's Auxiliary Air Force operator sat hunched over a cathode ray tube at the Bentley Priory filter room, watching a cluster of pale green blips crawl across her screen. Each blip represented dozens of German aircraft — bombers and fighters massing over the Pas-de-Calais, preparing for what Hermann Goering had promised would be the final knockout blow against the Royal Air Force. But the WAAF operator was calm. She had been watching those blips form for nearly twenty minutes already, and across southern England, Spitfires and Hurricanes were already climbing to altitude, guided to precise intercept points by the invisible radio beams that had detected the enemy while they were still assembling over France. The Luftwaffe pilots, expecting to catch the RAF on the ground, would instead find the sky full of fighters waiting for them. They had no idea how this kept happening. The answer was radar — and it was about to save Britain.</p>
 
@@ -61,7 +70,7 @@
 
       <blockquote>
         <p>"Britain has become an island once more."</p>
-        <cite>— Watson-Watt, on the implications of radar for air defense</cite>
+        <p>— Watson-Watt, on the implications of radar for air defense</p>
       </blockquote>
 
       <p>Air Marshal Hugh Dowding, who witnessed the demonstration, immediately grasped the implications. If this technology could be developed into a practical system, it would solve the single greatest problem facing Britain's air defense: the impossibility of knowing where the enemy was coming from until it was too late. Within weeks, funding was approved to build the first operational radar stations.</p>
@@ -72,19 +81,42 @@
 
       <p>The stations themselves were anything but subtle. Each one featured a set of towering steel transmitter masts, some reaching 360 feet into the sky, alongside shorter wooden receiver towers of about 240 feet. To anyone driving past, they looked like bizarre industrial installations — which was precisely the cover story. The Germans knew the towers existed. They simply had no idea what they actually did.</p>
 
-      <aside class="story-quick-facts">
-        <h3>Quick Facts</h3>
-        <ul>
-          <li><strong>21 Chain Home stations</strong> were operational by the start of the Battle of Britain in July 1940</li>
-          <li><strong>120 miles</strong> — typical detection range of a Chain Home station for high-flying aircraft</li>
-          <li><strong>25 seconds</strong> — time from radar detection to a plot appearing on the operations room map table</li>
-          <li><strong>2,000+</strong> WAAFs served as radar operators during the Battle of Britain</li>
-          <li><strong>10 cm</strong> — wavelength of the cavity magnetron, vs. 12 meters for Chain Home</li>
-          <li><strong>$6 billion</strong> — estimated U.S. spending on radar during WWII (more than the Manhattan Project's $2 billion)</li>
-          <li><strong>2,603</strong> U-boats detected by Allied radar in the Atlantic during 1943 alone</li>
-          <li><strong>745,000 strips</strong> of Window/chaff were dropped during the first Hamburg raid on July 24, 1943</li>
-        </ul>
-      </aside>
+      <!-- Quick Facts -->
+      <div class="story-quick-facts">
+        <h4>Quick Facts</h4>
+        <div class="fact-item">
+          <span class="fact-label">Chain Home Stations</span>
+          <span class="fact-value">21 operational by the start of the Battle of Britain in July 1940</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Detection Range</span>
+          <span class="fact-value">120 miles typical for high-flying aircraft</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Response Time</span>
+          <span class="fact-value">25 seconds from radar detection to operations room plot</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">WAAF Operators</span>
+          <span class="fact-value">2,000+ served during the Battle of Britain</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Cavity Magnetron</span>
+          <span class="fact-value">10 cm wavelength, vs. 12 meters for Chain Home</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">U.S. Radar Spending</span>
+          <span class="fact-value">$6 billion during WWII (more than the Manhattan Project's $2 billion)</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">U-Boats Detected</span>
+          <span class="fact-value">2,603 by Allied radar in the Atlantic during 1943 alone</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Window/Chaff</span>
+          <span class="fact-value">745,000 strips dropped during the first Hamburg raid, July 24, 1943</span>
+        </div>
+      </div>
 
       <p>By September 1938 — a full year before war broke out — fifteen Chain Home stations were operational, covering the approaches from the North Sea. When Neville Chamberlain flew to Munich to negotiate with Hitler, Britain already had a working early warning system that could detect aircraft over 100 miles away. By the time Germany invaded Poland in September 1939, the network had expanded to twenty stations covering the entire eastern coast. It was, in the assessment of many historians, the single most important military secret Britain possessed.</p>
 
@@ -102,7 +134,7 @@
 
       <blockquote>
         <p>"The RAF seemed to know exactly where we were coming from and how many of us there were. We could never catch them on the ground. It was uncanny."</p>
-        <cite>— Adolf Galland, Luftwaffe fighter ace, reflecting on the Battle of Britain</cite>
+        <p>— Adolf Galland, Luftwaffe fighter ace, reflecting on the Battle of Britain</p>
       </blockquote>
 
       <p>The results were devastating for the Luftwaffe. Time and again, German formations expecting to achieve surprise found the sky already filled with Spitfires and Hurricanes, positioned at the right altitude and vectored onto intercept courses with unnerving precision. German losses mounted steadily through August and September. The climax came on September 15 — now celebrated as Battle of Britain Day — when the Luftwaffe launched two massive raids against London. Both were met by concentrated fighter opposition that inflicted crippling losses. Two days later, Hitler quietly postponed Operation Sea Lion. It would never be rescheduled.</p>
@@ -127,7 +159,7 @@
 
       <blockquote>
         <p>"When the strategy of the war is studied in after years, it will be found that in sending the Tizard Mission to America, the British made a contribution to victory that was perhaps as great as any single military operation."</p>
-        <cite>— James Phinney Baxter III, <em>Scientists Against Time</em> (1946)</cite>
+        <p>— James Phinney Baxter III, <em>Scientists Against Time</em> (1946)</p>
       </blockquote>
 
       <p>The result was an explosion of radar development in the United States. The MIT Radiation Laboratory — the "Rad Lab" — was established within weeks, eventually employing nearly 4,000 people and developing over 150 different radar systems. American industrial might turned the magnetron from a laboratory curiosity into a mass-produced weapon of war. By 1945, the United States had spent approximately $3 billion on radar development and production — significantly more than the $2 billion spent on the Manhattan Project. Radar was, by any measure, the war's most expensive technology program.</p>
@@ -164,7 +196,7 @@
 
       <blockquote>
         <p>"The radar war was a battle of wits — a war within a war — where a few scientists in laboratory coats determined the fate of thousands in the air and millions on the ground."</p>
-        <cite>— R.V. Jones, British scientific intelligence officer</cite>
+        <p>— R.V. Jones, British scientific intelligence officer</p>
       </blockquote>
 
       <p>The Germans adapted, of course. Within weeks, they had developed new night-fighter tactics that relied less on ground-controlled radar and more on onboard systems that could filter out the Window interference. The British responded with new jamming techniques. The Germans developed counter-countermeasures. And so the electronic war escalated, each side deploying increasingly sophisticated technologies in a relentless cycle of innovation that continues to this day in military electronic warfare.</p>
@@ -193,21 +225,29 @@
 
       <blockquote>
         <p>"Radar won the war; the atom bomb ended it."</p>
-        <cite>— Lee DuBridge, director of the MIT Radiation Laboratory</cite>
+        <p>— Lee DuBridge, director of the MIT Radiation Laboratory</p>
       </blockquote>
 
       <p>Robert Watson-Watt, the man who started it all, spent his later years receiving honors but also watching others take credit for what had been a vast collective achievement. He was knighted in 1942 and remained active in scientific circles until his death in 1973. In one of history's more amusing footnotes, he was reportedly caught speeding by a radar gun in Canada in the 1950s. His response, according to legend, was a rueful poem: "Pity Sir Robert Watson-Watt / Strange target of his radar plot / And thus, with others I could mention / The victim of his own invention."</p>
 
       <p>The Chain Home towers are gone now, almost all of them dismantled in the decades after the war. A few concrete foundations remain along the English coast, slowly crumbling into the earth. But the invisible shield they created never really came down. It simply evolved — into the vast, interconnected web of sensors, satellites, and systems that watches over the modern world. Every time an aircraft lands safely in fog, every time a weather forecast warns of an approaching hurricane, every time a ship navigates through darkness, the echoes of those first flickering blips on a cathode ray tube in 1935 are still being heard.</p>
 
+      </div>
     </div>
-  </article>
+  </section>
 
+  <!-- Related Stories -->
   <section class="related-stories">
     <div class="container">
-      <h2>Related Stories</h2>
+      <div class="featured-header reveal">
+        <div>
+          <p class="section-label">Continue Reading</p>
+          <h2>Related Stories</h2>
+        </div>
+        <a href="stories.html" class="btn btn-outline">All Stories</a>
+      </div>
       <div class="stories-grid">
-        <a href="story-enigma.html" class="card">
+        <a href="story-enigma.html" class="card reveal">
           <div class="card-image-wrapper">
             <img class="card-image" src="https://images.unsplash.com/photo-1574715826360-7c02d0153097?w=600&q=80" alt="Bletchley Park">
           </div>
@@ -218,7 +258,7 @@
             <span class="card-link">Read the full story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </a>
-        <a href="story-manhattan-project.html" class="card">
+        <a href="story-manhattan-project.html" class="card reveal reveal-delay-1">
           <div class="card-image-wrapper">
             <img class="card-image" src="https://images.unsplash.com/photo-1563804951831-49844db19644?w=600&q=80" alt="Silhouette of soldiers">
           </div>
@@ -233,6 +273,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">

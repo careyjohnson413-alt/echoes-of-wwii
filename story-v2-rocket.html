@@ -13,6 +13,7 @@
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="container">
       <a href="index.html" class="nav-logo">
@@ -31,21 +32,29 @@
     </div>
   </nav>
 
-  <section class="story-hero" style="background-image: url('https://images.unsplash.com/photo-1517976487492-5750f3195933?w=1400&q=80')">
+  <!-- Story Hero -->
+  <div class="story-hero">
+    <div class="story-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1517976487492-5750f3195933?w=1400&q=80');"></div>
     <div class="story-hero-overlay"></div>
-    <div class="container story-hero-content">
-      <div class="story-meta">
-        <span>1942 — 1945</span>
-        <span>Technology</span>
-        <span>13 min read</span>
+    <div class="story-hero-content">
+      <div class="container">
+        <div class="story-meta">
+          <span class="story-meta-item">1942 — 1945</span>
+          <span class="story-meta-divider"></span>
+          <span class="story-meta-item">Technology</span>
+          <span class="story-meta-divider"></span>
+          <span class="story-meta-item">13 min read</span>
+        </div>
+        <h1>The V-2 Rocket: Vengeance and the Birth of the Space Age</h1>
+        <p class="story-hero-description">How a weapon designed to terrorize civilians became the unlikely foundation of modern rocketry and the space race.</p>
       </div>
-      <h1>The V-2 Rocket: Vengeance and the Birth of the Space Age</h1>
-      <p class="story-description">How a weapon designed to terrorize civilians became the unlikely foundation of modern rocketry and the space race.</p>
     </div>
-  </section>
+  </div>
 
-  <article class="story-content">
-    <div class="container container-narrow">
+  <!-- Story Content -->
+  <section class="story-content">
+    <div class="container">
+      <div class="story-body">
 
       <h2>Death Without Warning</h2>
 
@@ -71,7 +80,7 @@
 
       <blockquote>
         <p>"I have had to apologize only to two people in my whole life. The first was to God, the second was to the V-2 rocket."</p>
-        <cite>— Wernher von Braun, reflecting on the V-2's unreliability during development</cite>
+        <p>— Wernher von Braun, reflecting on the V-2's unreliability during development</p>
       </blockquote>
 
       <h2>The Buzz Bomb: Germany's First Vengeance</h2>
@@ -90,24 +99,62 @@
 
       <p>The Aggregat 4 — its technical designation before Hitler renamed it the V-2 — was a quantum leap beyond anything else in the world's arsenals. Standing fourteen meters tall and weighing over twelve metric tons fully fueled, it was the first large-scale liquid-propellant rocket ever built, and the first man-made object to cross the boundary of space.</p>
 
-      <aside class="story-quick-facts">
-        <h3>Quick Facts</h3>
-        <ul>
-          <li><strong>Designation:</strong> Aggregat 4 (A4), renamed V-2 (Vergeltungswaffe 2)</li>
-          <li><strong>Length:</strong> 14 meters (46 feet)</li>
-          <li><strong>Weight at launch:</strong> 12,500 kg (27,600 lbs)</li>
-          <li><strong>Warhead:</strong> 980 kg (2,200 lbs) of Amatol explosive</li>
-          <li><strong>Range:</strong> 320 km (200 miles)</li>
-          <li><strong>Maximum altitude:</strong> 88 km (55 miles) — above the K&aacute;rm&aacute;n line</li>
-          <li><strong>Top speed:</strong> 5,760 km/h (3,580 mph) — Mach 4.7</li>
-          <li><strong>Fuel:</strong> Ethanol and liquid oxygen</li>
-          <li><strong>Engine thrust:</strong> 25,000 kg (56,000 lbs)</li>
-          <li><strong>Total launched:</strong> ~3,225 in combat</li>
-          <li><strong>Killed by V-2 strikes:</strong> ~9,000 (military and civilian)</li>
-          <li><strong>Killed building V-2s:</strong> ~12,000 (forced laborers)</li>
-          <li><strong>First successful test flight:</strong> October 3, 1942</li>
-        </ul>
-      </aside>
+      <!-- Quick Facts -->
+      <div class="story-quick-facts">
+        <h4>Quick Facts</h4>
+        <div class="fact-item">
+          <span class="fact-label">Designation</span>
+          <span class="fact-value">Aggregat 4 (A4), renamed V-2 (Vergeltungswaffe 2)</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Length</span>
+          <span class="fact-value">14 meters (46 feet)</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Weight at launch</span>
+          <span class="fact-value">12,500 kg (27,600 lbs)</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Warhead</span>
+          <span class="fact-value">980 kg (2,200 lbs) of Amatol explosive</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Range</span>
+          <span class="fact-value">320 km (200 miles)</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Maximum altitude</span>
+          <span class="fact-value">88 km (55 miles) — above the K&aacute;rm&aacute;n line</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Top speed</span>
+          <span class="fact-value">5,760 km/h (3,580 mph) — Mach 4.7</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Fuel</span>
+          <span class="fact-value">Ethanol and liquid oxygen</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Engine thrust</span>
+          <span class="fact-value">25,000 kg (56,000 lbs)</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Total launched</span>
+          <span class="fact-value">~3,225 in combat</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Killed by V-2 strikes</span>
+          <span class="fact-value">~9,000 (military and civilian)</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Killed building V-2s</span>
+          <span class="fact-value">~12,000 (forced laborers)</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">First successful test flight</span>
+          <span class="fact-value">October 3, 1942</span>
+        </div>
+      </div>
 
       <p>Its engine was a masterpiece of destructive engineering. A turbopump, driven by hydrogen peroxide steam, forced ethanol and liquid oxygen into a combustion chamber at a rate of 125 kilograms per second. The resulting inferno produced 25 metric tons of thrust, accelerating the rocket to nearly five times the speed of sound in just 65 seconds of powered flight. The combustion chamber reached temperatures above 2,700 degrees Celsius — hot enough to melt the steel it was made from. The engine survived only because a film of alcohol was injected along the chamber walls, providing a thin layer of evaporative cooling. It was an elegant solution to an impossible problem.</p>
 
@@ -117,7 +164,7 @@
 
       <blockquote>
         <p>"Do you realize what we accomplished today? Today the spaceship was born! But I warn you: our rocket worked perfectly, except for landing on the wrong planet."</p>
-        <cite>— General Walter Dornberger, after the first successful V-2 test flight, October 3, 1942</cite>
+        <p>— General Walter Dornberger, after the first successful V-2 test flight, October 3, 1942</p>
       </blockquote>
 
       <p>The guidance system, while primitive by modern standards, was remarkably sophisticated for 1942. A pair of gyroscopes maintained the rocket's attitude, while an accelerometer measured velocity. When the rocket reached a pre-calculated speed, a signal cut the engine. From that point on, simple physics — the ballistic arc — determined where the warhead would land. The system was accurate to within about seventeen kilometers, which made the V-2 useless against specific military targets but devastatingly effective against cities.</p>
@@ -136,7 +183,7 @@
 
       <blockquote>
         <p>"I could see the prisoners. They were just skin and bones. I felt sick. But I was told not to look, not to ask questions."</p>
-        <cite>— A German civilian worker at the Mittelwerk factory</cite>
+        <p>— A German civilian worker at the Mittelwerk factory</p>
       </blockquote>
 
       <p>Von Braun visited the Mittelwerk factory on multiple occasions. He later claimed that he was powerless to improve conditions and that he was focused solely on technical matters. Survivors told a different story. At least one former prisoner testified that von Braun personally selected workers from the camp and was present when prisoners were hanged for alleged sabotage. The truth of his precise involvement remains contested, but one fact is beyond dispute: von Braun knew what was happening inside the mountain, and he continued to build his rockets.</p>
@@ -187,7 +234,7 @@
 
       <blockquote>
         <p>"Once the rockets are up, who cares where they come down? That's not my department, says Wernher von Braun."</p>
-        <cite>— Tom Lehrer, satirical song, 1965</cite>
+        <p>— Tom Lehrer, satirical song, 1965</p>
       </blockquote>
 
       <p>Not everyone was convinced. Satirist Tom Lehrer captured the moral unease in a devastating song. Holocaust survivors who had labored in the Mittelwerk tunnels were horrified to see their former overseer celebrated as an American hero. French resistance fighter and Mittelbau-Dora survivor Jean Michel spent decades documenting the horrors of the underground factory and demanding accountability. But in the context of the Cold War, these voices were marginalized. Von Braun was too useful to be held accountable.</p>
@@ -222,14 +269,22 @@
 
       <p>We have never answered this question. We have only learned to live with it — just as we have learned to live in a world that the V-2, for better and for worse, helped to create.</p>
 
+      </div>
     </div>
-  </article>
+  </section>
 
+  <!-- Related Stories -->
   <section class="related-stories">
     <div class="container">
-      <h2>Related Stories</h2>
+      <div class="featured-header reveal">
+        <div>
+          <p class="section-label">Continue Reading</p>
+          <h2>Related Stories</h2>
+        </div>
+        <a href="stories.html" class="btn btn-outline">All Stories</a>
+      </div>
       <div class="stories-grid">
-        <a href="story-radar.html" class="card">
+        <a href="story-radar.html" class="card reveal">
           <div class="card-image-wrapper">
             <img class="card-image" src="https://images.unsplash.com/photo-1534996858221-380b92700493?w=600&q=80" alt="Radar technology">
           </div>
@@ -240,7 +295,7 @@
             <span class="card-link">Read the full story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </a>
-        <a href="story-manhattan-project.html" class="card">
+        <a href="story-manhattan-project.html" class="card reveal reveal-delay-1">
           <div class="card-image-wrapper">
             <img class="card-image" src="https://images.unsplash.com/photo-1563804951831-49844db19644?w=600&q=80" alt="Silhouette of soldiers">
           </div>
@@ -255,6 +310,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">

@@ -133,14 +133,16 @@
 }
 
 /* Quick facts sidebar */
-.story-facts {
+.story-facts,
+.story-quick-facts {
   background: var(--bg-card);
   border: 1px solid var(--border);
   padding: 2rem;
   margin: 3rem 0;
 }
 
-.story-facts h4 {
+.story-facts h4,
+.story-quick-facts h4 {
   font-size: 0.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
