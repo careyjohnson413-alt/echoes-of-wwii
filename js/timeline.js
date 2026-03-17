@@ -2,8 +2,13 @@
    ECHOES OF WWII — Timeline Interactivity
    ============================================ */
 
-// --- Scroll-triggered reveal for timeline events ---
+// --- Assign alternating left/right classes ---
 const timelineEvents = document.querySelectorAll('.timeline-event');
+timelineEvents.forEach((event, i) => {
+  event.classList.add(i % 2 === 0 ? 'timeline-left' : 'timeline-right');
+});
+
+// --- Scroll-triggered reveal for timeline events ---
 
 const timelineObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

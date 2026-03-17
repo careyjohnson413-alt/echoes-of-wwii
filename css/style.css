@@ -211,10 +211,25 @@ section {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse at 20% 50%, rgba(139, 32, 32, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(201, 168, 76, 0.04) 0%, transparent 50%),
-    var(--bg-primary);
+  background: var(--bg-primary);
+  z-index: 0;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url('https://images.unsplash.com/photo-1541339246244-261d72e381b7?w=1600&q=80');
+  background-size: cover;
+  background-position: center 40%;
+  filter: grayscale(40%) contrast(1.1) brightness(0.55);
+}
+
+.hero-image-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 0.15) 35%, rgba(10, 10, 10, 0.4) 70%, var(--bg-primary) 100%);
 }
 
 .hero-grain {
