@@ -219,17 +219,16 @@ section {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-image: url('https://images.unsplash.com/photo-1541339246244-261d72e381b7?w=1600&q=80');
+  background-image: url('../assets/hero-soldier.png');
   background-size: cover;
-  background-position: center 40%;
-  filter: grayscale(40%) contrast(1.1) brightness(0.55);
+  background-position: center center;
 }
 
 .hero-image-overlay {
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 0.15) 35%, rgba(10, 10, 10, 0.4) 70%, var(--bg-primary) 100%);
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.4) 40%, rgba(10, 10, 10, 0.55) 70%, var(--bg-primary) 100%);
 }
 
 .hero-grain {
@@ -251,26 +250,27 @@ section {
   font-size: 0.8rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--accent-light);
+  color: #f0e6d3;
   margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeUp 0.8s ease forwards 0.3s;
 }
 
 .hero h1 {
+  color: #ffffff;
   margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeUp 0.8s ease forwards 0.5s;
 }
 
 .hero h1 .highlight {
-  color: var(--accent-light);
+  color: #f0e6d3;
   position: relative;
 }
 
 .hero-description {
   font-size: 1.15rem;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.85);
   max-width: 550px;
   margin: 0 auto 2.5rem;
   opacity: 0;
